@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  def index
-    @ideas = Idea.all
-  end
+  resources :ideas, only: [:index]
 
 end
